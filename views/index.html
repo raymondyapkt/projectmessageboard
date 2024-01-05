@@ -26,11 +26,12 @@
       <h2 style="text-align: left">API Tests:</h2>
         <h4>New thread (POST /api/threads/:board)</h4>
         <form action="/api/threads/test" method="post" id="newThread">
-          <input type='text' placeholder='board' id='board1' name='board' required=''><br>
-          <textarea type='text' placeholder='Thread text...' name='text' required=''></textarea><br>
-          <input type='text' placeholder='password to delete' name='delete_password' required=''><br>
+          <input type='text' value='NB1' id='board1' name='board' required=''><br>
+          <input type='text' value='NB1 Thread txt' name='text' required=''></textarea><br>
+          <input type='text' value='123#' name='delete_password' required=''><br>
           <input type="submit" value="Submit">
         </form>
+        <script> // <textarea type='text' value='New board 1 Thread text...'   </script>
         <hr>
         <h4>Report thread (PUT /api/threads/:board)</h4>
         <form id="reportThread">
